@@ -1,1 +1,304 @@
-hi
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lishan Yang's Homepage</title>
+<style>
+body {
+  margin:0;
+  padding: 0 0 20% 20%;
+  font-family: Consolas;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+div#my_nav_bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #b1def5;
+    position: fixed;
+    top: 0;
+    width: 60%;
+}
+
+div#my_nav_bar li {
+    float: right;
+}
+
+div#my_nav_bar li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+div#my_nav_bar li a:hover:not(.active) {
+    background-color: #7fc9ef;
+}
+
+</style>
+</head>
+<body>
+
+<div id="my_nav_bar">
+<ul>
+  
+
+  <li><a href="#services">Service</a></li>
+  <li><a href="#awards">Awards</a></li>
+  <li><a href="#professional_experience">Experience</a></li>
+  <li><a href="#publications">Publications</a></li>
+  <li><a href="#projects">Projects</a></li>
+  <li><a class="active" href="#home">Home</a></li>
+</ul>
+</div>
+
+<div style="padding:20px;margin-top:30px;background-color:white;height:1500px;width: 70%">
+
+                   
+	<div id='home'><br><br><br><br>
+
+          <!-- <div class="photo" style="float:left;height:430px;"> -->
+            <img src="photo.jpg" alt="Lishan_photo" style="margin-left:60px;margin-right:60px;float:left" height="230px">
+        <!-- </div> -->
+        <div style="margin-left: 320px">
+    <h1>Lishan Yang <font size='4'> (杨丽杉) </font> </h1>
+      
+      <p> William & Mary <br>
+      Department of Computer Science  <br>
+      Williamsburg, VA, 23185  <br><br>
+      Email: lyang28 AT gmu.edu <br> 
+      <!-- <br>Office: 101C McGlothlin-Street Hall<br> </p> -->
+        </div>
+    
+
+        <br><br>
+      <p>I received a Ph.D. degree in the <a href="https://www.wm.edu/as/computerscience/">Department of Computer Science</a> at <a href="https://www.wm.edu">William & Mary</a> in 2022, 
+ under the supervision of <a href="http://www.cs.wm.edu/~esmirni">Prof. Evgenia Smirni</a>. 
+ My research interest falls in GPU architecture, reliability analysis, performance analysis, workload characterization of large-scale systems, reliability of HPC and large scale systems. Recently I am especially interested in the <b>reliable operation of GPUs, neural networks, and autonomous driving systems</b>.
+ Before coming to W&M, I got my bachelor degree  in computer science from 
+ <a herf="www.ustc.edu.cn">University of Science and Technology of China (USTC)</a> in 2016. 
+<a href="CV_LishanYang.pdf">Check my CV here</a></p>
+     <font color="4697c1"><h3>News</h3></font>
+
+     &bull; I am serving as the Publicity Chair of <a href="https://www.sigmetrics.org/sigmetrics2023">Sigmetrics 2023</a>. Please consider submitting your work to Sigmetrics 2023!<br>
+     &bull; I am joining the <a href="https://cs.gmu.edu">Department of Computer Science</a> at <a href="https://www.gmu.edu">George Mason University</a> in August as a tenure-track assistant professor. I am looking for several highly-motivated students who are interested in system research to join my group. Ph.D. students will be fully funded. If you are interested: <a href="details.html">Click here for more details</a> or send your CV and transcript to my email (lyang11 AT email.wm.edu).
+
+
+      
+    </div> 
+
+
+
+<div id='projects'><br><br>
+  <font color="4697c1"><h2>Highlighted Projects</h2></font>
+<p> 
+ 
+<font size="5" color="fb9337"><b>SUGAR </b></font>
+
+<font size="4" color="fb9337">
+  <u>S</u>peeding <u>U</u>p <u>G</u>PGPU <u>A</u>pplication <u>R</u>esilience Estimation with Input Sizing</font> 
+<br>
+
+<div class="image" style="margin-left: 40px; float: right;display: inline-block;vertical-align: middle; width: 30%" align="right">
+<img src="2dpattern.png" alt="2dpattern" width="100%">
+<div  align="left" style="margin-left: 20px" ><font color="565656" size="2">If you want to know more about this pattern, please check SUGAR <a href="https://www.youtube.com/watch?v=UedRUjFfU1U">video</a> and <a href="https://dl.acm.org/doi/abs/10.1145/3447375">paper</a>!</font></div>
+</div>
+<ul>
+  <li> We found some patterns in a benchmark</li><br>
+  <li> In search of patterns, we found the trends across different input sizes</li><br>
+  <li> We use the trend to project resilience from a small input to larger inputs - We have SUGAR! </li><br>
+  <li> SUGAR has significant speedups (up to 1336 times) and 97.0 on the average with <1% estimation error</li><br>
+  <li> Appeared in Sigmetrics 2021 (Fall Deadline, Acceptance Rate: 12%)</li>
+</ul>
+
+<br>
+
+<font size="5" color="fb9337"><b>Partial Protection via Remapping </b></font>
+<br>
+
+<div class="image" style="margin-left: 40px; float: right;display: inline-block;vertical-align: middle; width: 30%" align="right">
+<img src="remapping.png" alt="2dpattern" width="100%">
+<div  align="left" style="margin-left: 10px" ><font color="565656" size="2">Want to know more about remapping and partial protection? <br>Check my <a href="https://www.youtube.com/watch?v=diuja8kH1dA">video</a> and <a href="https://arxiv.org/abs/2103.02825">paper</a>!</font></div>
+</div>
+<ul>
+  <li> Observation: reliable threads and unreliable threads live in the same thread group (and are executed together)</li><br>
+  <li> Why not separate them? - So we don't have to protect reliable threads!</li><br>
+  <li> Partial protection via remapping: Re-map threads into groups according to thread resilience; only protect unreliable groups </li><br>
+  <li> Saved >20% execution cycles!</li><br>
+  <li> Appeared in ICSE 2021 (Acceptance Rate: 22%)</li>
+</ul>
+
+
+</p>
+
+</div>
+
+
+ <div id="publications" >
+    <br><br>
+  <font color="4697c1"><h2>Publications</h2></font>
+
+<font color="565656">
+
+<font size="4" color="black">Strategic Safety-Critical Attacks Against an Advanced Driver Assistance System</font>
+ <br> DSN 2022, Practice Experience Report, to appear
+<br>
+X. Zhou, A. Schmedding, H. Ren, <b>L. Yang</b>, P. Schowitz, E. Smirni, H. Alemzadeh
+
+<br><br>
+
+
+
+
+<font size="4" color="black">Lifespan and Failures of SSDs and HDDs: Similarities, Differences, and Prediction Models</font>
+ <br> IEEE Transactions on Dependable and Secure Computing (TDSC), to appear in 2022
+<br>
+R. Pinciroli, <b>L. Yang</b>, J. Alter, E. Smirni 
+
+<br><br>
+
+
+
+
+<font size="4" color="black">SUGAR: <u>S</u>peeding <u>U</u>p <u>G</u>PGPU <u>A</u>pplication <u>R</u>esilience Estimation with Input Sizing </font>
+ <br>Sigmetrics 2021 (Fall Deadline, Acceptance Rate: 12%) <a href="sugar.pdf">[PDF]</a> <a href="https://www.youtube.com/watch?v=UedRUjFfU1U">[video]</a> <a href="SUGAR_slides.pdf">[Slides]</a>
+<br>
+<b>L. Yang</b>, B. Nie, A. Jog, E. Smirni 
+
+<br><br>
+
+
+<font size="4" color="black">Enabling Software Resilience in GPGPU Applications via Partial Thread Protection</font>
+  <br>ICSE 2021 (Acceptance Rate: 22%) <a href="https://arxiv.org/abs/2103.02825">[PDF]</a> <a href="https://www.youtube.com/watch?v=diuja8kH1dA">[Video]</a> <a href="remapping_slides.pdf">[Slides]</a>
+<br>
+<b>L. Yang</b>, B. Nie, A. Jog, E. Smirni
+
+
+<br><br>
+
+<font size="4" color="black"> Practical Resilience Analysis of GPGPU Applications in the Presence of Single- and Multi-bit Faults </font>
+<br>  IEEE Transactions on Computers, vol. 70, no. 1, pp. 30-44, 1 Jan. 2021 <a href="single-and-multi-bit-pruning.pdf">[PDF]</a>
+<br>
+<b>L. Yang</b>, B. Nie, A. Jog, E. Smirni
+
+<br><br>
+
+
+
+<font size="4" color="black">Fault Site Pruning for Practical Reliability Analysis of GPGPU Applications </font>
+<br> 
+MICRO 2018: 749-761 (Acceptance Rate: 21%) <a href="micro_pruning.pdf">[PDF]</a> <a href="https://youtu.be/_4kJyhz-uAw">[Lightening Video]</a>     <a href="pruning_slides.pdf">[Slides]</a> <a href="pruning_poster.pdf">[Poster]</a>
+
+  <br>
+B. Nie, <b> L. Yang</b>, A. Jog, E. Smirni. 
+<br><br>
+
+
+<font size="4" color="black">G-NET: Effective GPU Sharing in NFV Systems</font>
+<br> NSDI 2018: 187-200 (Acceptance Rate: 16%) <a href="G-NET.pdf">[PDF]</a>
+<br>
+K. Zhang, B. He, J. Hu, Z. Wang, B. Hua, J. Meng, <b>L. Yang</b>.
+<br> <br>
+<font size="4" color="black">Evaluating
+Scalability and Performance of a Security Management Solution in Large Virtualized Environments </font>
+<br> ICPE 2018: 168-175 <a href="htvmbench.pdf">[PDF]</a> <a href="htvmbench_slides.pdf">[Slides]</a><br>
+<b>L. Yang</b>, L. Cherkasova, R. Badgujar, J. Blancaflor, R. Konde, J. Mills, E. Smirni. 
+<br>
+
+<font color="4697c1"><h3>Refereed Posters</h3></font>
+
+
+
+<font size="4" color="black">Typhoon: Enabling GPGPU Application Resilience Estimation with Different Input Types </font>
+ <br>ACM Sigmetrics Student Research Competition (SRC) 2021 
+<a href="typhoon.pdf">[PDF]</a><br>
+<b>L. Yang</b>
+
+<br><br>
+
+
+
+<font size="4" color="black">Simulating COVID-19 Containment Measures Using the South Korean Patient Data</font>
+<br>
+Sensys 2020, COVID-19 Pandemic Research Poster Session <a href="covid19_simulation.pdf">[PDF] </a> <a href="covid19_simulation_slides.pdf">[Slides]</a> <a href="https://youtu.be/H3qYZ47O6wU">[Demo]</a>
+<br>
+<b>L. Yang</b>, A. Schmedding, R. Pinciroli, E. Smirni
+
+
+
+
+</font>
+</p>    
+  </div>
+
+ <div id="professional_experience" ><br><br>
+  <font color="4697c1"><h2>Professional Experience</h2></font>
+<p> 
+2017/08 - Present &nbsp; Research Assistant, William & Mary <br>
+2021/05 - 2021/08 &nbsp; Software Engineering Intern, Facebook Inc <br>
+2019/06 - 2019/10 &nbsp; Reliability Intern, IBM Corporation <br>
+2018/07 - 2018/07 &nbsp; Student, ACACES Summer School <br>
+2017/05 - 2017/08 &nbsp; Software Engineering Intern, Hytrust Inc <br>
+2016/08 - 2018/05 &nbsp; Teaching Assistant, William & Mary  <br>
+</p>
+</div>
+
+
+<div id="awards" >
+    <br><br>
+  <font color="4697c1"><h2>Awards</h2></font>
+<p>
+2022 &nbsp; Student Travel Grant for DSN <br>
+2022 &nbsp; Graduate Park Award, William & Mary<br>
+2021 &nbsp; vGHC Students and Faculty Scholarship<br>
+2021 &nbsp; International Student Opportunity Scholarship, William & Mary<br>
+2018 &nbsp; Student Travel Grant for MICRO, ICPE, and NSDI<br>
+2018 &nbsp; OGSR Research Grant, William & Mary<br>
+2018 &nbsp; Student Leadership Grant, William & Mary<br>
+2018 &nbsp; CS Student Travel Grant, William & Mary<br>
+2013 &nbsp; Tenth Yang Ya Scholarship, USTC<br>
+&nbsp;
+</p>
+</div>
+
+<div id="services" ><br><br>
+  <font color="4697c1"><h2>Service</h2></font>
+<p> 
+Publicity Chair
+<br> <font color="565656">
+    Sigmetrics 2023 </font><br><br>
+Session Chair & Poster Judge
+ <br> <font color="565656">
+ACM Capital Region Celebration of Women in Computing (CAPWIC) 2021 and 2022</font> <br> <br>
+  Sub-reviewer
+  <br> <font color="565656">Sigmetrics 2022, DSN 2022, DSN 2021, Sigmetrics 2021, Sigmetrics 2020, Performance 2020, ICPE 2020, Sigmetrics 2019, DSN 2019 </font><br> <br>
+Member 
+<br> <font color="565656">WHPC-Virginia (Women in High Performance Computing in Virginia)<br> SWC-WM (Society of Women in Computing in William & Mary)</font><br> <br>
+Volunteer <br> <font color="565656">HPDC 2019 Program Committee  Meeting</font><br> <br>
+Mentor <br> <font color="565656">HackViolet 2022
+<a href="https://www.hackviolet.com/">[Website link]</a></font>
+
+</p>
+
+
+<div><br><br>
+  <font color="4697c1"><h2>Other Interests & Life</h2></font>
+<p> 
+ &bull; I am a big fan of Bach &#9835 <font color="999999"> (and bash)</font>  <br>
+ &bull; <a href="https://www.instagram.com/p/CVb2ePqryAJ/?utm_source=ig_web_copy_link">Check my roommate's photo >w< </a><br>
+ &bull; Haoyue Jiang helped me with my homepage photo. We reserved a camera from our Swem library and performed unsupervised learning :)
+  By the way, she is also a member of WHPC-Virginia.
+</p>
+
+<br><br><br><br><br><br>
+</div>
+
+</div>
+
+</body>
+</html>
