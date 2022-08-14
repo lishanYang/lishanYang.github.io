@@ -48,11 +48,11 @@ div#my_nav_bar li a:hover:not(.active) {
 <ul>
   
 
-  <li><a href="#services">Service</a></li>
   <li><a href="#awards">Awards</a></li>
   <li><a href="#professional_experience">Experience</a></li>
+  <li><a href="#services">Service</a></li>
+  <li><a href="#teaching">Teaching</a></li>
   <li><a href="#publications">Publications</a></li>
-  <li><a href="#projects">Projects</a></li>
   <li><a class="active" href="#home">Home</a></li>
 </ul>
 </div>
@@ -79,11 +79,11 @@ div#my_nav_bar li a:hover:not(.active) {
         <br><br>
       <p>I received a Ph.D. degree in the <a href="https://www.wm.edu/as/computerscience/">Department of Computer Science</a> at <a href="https://www.wm.edu">William & Mary</a> in 2022, 
  under the supervision of <a href="http://www.cs.wm.edu/~esmirni">Prof. Evgenia Smirni</a>. 
- My research interest falls in GPU architecture, reliability analysis, performance analysis, workload characterization of large-scale systems, reliability of HPC and large scale systems. Recently I am especially interested in the <b>reliable operation of GPUs, neural networks, and autonomous driving systems</b>.
- Before coming to W&M, I got my bachelor degree  in computer science from 
+ My research interest mainly falls in the <b>reliable operation of GPUs, non-conventional sensors, autonomous driving systems, and neural networks</b>. I am also interested in GPU architecture and software engineering efforts to accelerate reliability and system research process.
+  Before coming to W&M, I got my bachelor's degree  in computer science from 
  <a herf="www.ustc.edu.cn">University of Science and Technology of China (USTC)</a> in 2016. 
 <a href="CV_LishanYang.pdf">Check my CV here</a></p>
-     <font color="4697c1"><h3>News</h3></font>
+     <!-- <font color="4697c1"><h3>News</h3></font> -->
 
      &bull; I am looking for several highly-motivated students who are interested in system research to join my group. Ph.D. students will be fully funded. If you are interested: <a href="details.html">Click here for more details</a> or send your CV and transcript to my email (lyang28 AT gmu.edu).
 
@@ -92,60 +92,22 @@ div#my_nav_bar li a:hover:not(.active) {
     </div> 
 
 
-
-<div id='projects'><br><br>
-  <font color="4697c1"><h2>Highlighted Projects</h2></font>
-<p> 
- 
-<font size="5" color="fb9337"><b>SUGAR </b></font>
-
-<font size="4" color="fb9337">
-  <u>S</u>peeding <u>U</u>p <u>G</u>PGPU <u>A</u>pplication <u>R</u>esilience Estimation with Input Sizing</font> 
-<br>
-
-<div class="image" style="margin-left: 40px; float: right;display: inline-block;vertical-align: middle; width: 30%" align="right">
-<img src="2dpattern.png" alt="2dpattern" width="100%">
-<div  align="left" style="margin-left: 20px" ><font color="565656" size="2">If you want to know more about this pattern, please check SUGAR <a href="https://www.youtube.com/watch?v=UedRUjFfU1U">video</a> and <a href="https://dl.acm.org/doi/abs/10.1145/3447375">paper</a>!</font></div>
-</div>
-<ul>
-  <li> We found some patterns in a benchmark</li><br>
-  <li> In search of patterns, we found the trends across different input sizes</li><br>
-  <li> We use the trend to project resilience from a small input to larger inputs - We have SUGAR! </li><br>
-  <li> SUGAR has significant speedups (up to 1336 times) and 97.0 on the average with <1% estimation error</li><br>
-  <li> Appeared in Sigmetrics 2021 (Fall Deadline, Acceptance Rate: 12%)</li>
-</ul>
-
-<br>
-
-<font size="5" color="fb9337"><b>Partial Protection via Remapping </b></font>
-<br>
-
-<div class="image" style="margin-left: 40px; float: right;display: inline-block;vertical-align: middle; width: 30%" align="right">
-<img src="remapping.png" alt="2dpattern" width="100%">
-<div  align="left" style="margin-left: 10px" ><font color="565656" size="2">Want to know more about remapping and partial protection? <br>Check my <a href="https://www.youtube.com/watch?v=diuja8kH1dA">video</a> and <a href="https://arxiv.org/abs/2103.02825">paper</a>!</font></div>
-</div>
-<ul>
-  <li> Observation: reliable threads and unreliable threads live in the same thread group (and are executed together)</li><br>
-  <li> Why not separate them? - So we don't have to protect reliable threads!</li><br>
-  <li> Partial protection via remapping: Re-map threads into groups according to thread resilience; only protect unreliable groups </li><br>
-  <li> Saved >20% execution cycles!</li><br>
-  <li> Appeared in ICSE 2021 (Acceptance Rate: 22%)</li>
-</ul>
-
-
-</p>
-
-</div>
-
-
- <div id="publications" >
+<div id="publications" >
     <br><br>
   <font color="4697c1"><h2>Publications</h2></font>
 
 <font color="565656">
 
+  <font size="4" color="black">GeoSpread: an Epidemic Spread Modeling Tool for COVID-19 Using Mobility Data</font>
+<br>
+GoodIT 2022
+<br>
+A. Schmedding, <b>L. Yang</b>, R. Pinciroli, E. Smirni
+
+<br><br>
+
 <font size="4" color="black">Strategic Safety-Critical Attacks Against an Advanced Driver Assistance System</font>
- <br> DSN 2022, Practice Experience Report, to appear
+ <br> DSN 2022, Practice Experience Report
 <br>
 X. Zhou, A. Schmedding, H. Ren, <b>L. Yang</b>, P. Schowitz, E. Smirni, H. Alemzadeh
 
@@ -194,7 +156,7 @@ R. Pinciroli, <b>L. Yang</b>, J. Alter, E. Smirni
 MICRO 2018: 749-761 (Acceptance Rate: 21%) <a href="micro_pruning.pdf">[PDF]</a> <a href="https://youtu.be/_4kJyhz-uAw">[Lightening Video]</a>     <a href="pruning_slides.pdf">[Slides]</a> <a href="pruning_poster.pdf">[Poster]</a>
 
   <br>
-B. Nie, <b> L. Yang</b>, A. Jog, E. Smirni. 
+B. Nie, <b> L. Yang</b>, A. Jog, E. Smirni
 <br><br>
 
 
@@ -206,7 +168,7 @@ K. Zhang, B. He, J. Hu, Z. Wang, B. Hua, J. Meng, <b>L. Yang</b>.
 <font size="4" color="black">Evaluating
 Scalability and Performance of a Security Management Solution in Large Virtualized Environments </font>
 <br> ICPE 2018: 168-175 <a href="htvmbench.pdf">[PDF]</a> <a href="htvmbench_slides.pdf">[Slides]</a><br>
-<b>L. Yang</b>, L. Cherkasova, R. Badgujar, J. Blancaflor, R. Konde, J. Mills, E. Smirni. 
+<b>L. Yang</b>, L. Cherkasova, R. Badgujar, J. Blancaflor, R. Konde, J. Mills, E. Smirni
 <br>
 
 <font color="4697c1"><h3>Refereed Posters</h3></font>
@@ -235,10 +197,42 @@ Sensys 2020, COVID-19 Pandemic Research Poster Session <a href="covid19_simulati
 </p>    
   </div>
 
+<div id="teaching" ><br><br>
+  <font color="4697c1"><h2>Teaching</h2></font>
+<p> 
+  CS475 Concurrent & Distributed Systems, 2022 Fall
+</p>
+</div>
+
+
+<div id="services" ><br><br>
+  <font color="4697c1"><h2>Service</h2></font>
+<p> 
+  Program Committee
+<br> <font color="565656">
+    IPDPS 2023 </font><br><br>
+Organizing Committee
+<br> <font color="565656">
+    Sigmetrics 2023 (Publicity Chair) </font><br><br>
+Session Chair & Poster Judge
+ <br> <font color="565656">
+ACM Capital Region Celebration of Women in Computing (CAPWIC) 2021 and 2022</font> <br> <br>
+  Sub-reviewer
+  <br> <font color="565656">Sigmetrics 2022, DSN 2022, DSN 2021, Sigmetrics 2021, Sigmetrics 2020, Performance 2020, ICPE 2020, Sigmetrics 2019, DSN 2019 </font><br> <br>
+Member 
+<br> <font color="565656">WHPC-Virginia (Women in High Performance Computing in Virginia)<br> SWC-WM (Society of Women in Computing in William & Mary)</font><br> <br>
+Volunteer <br> <font color="565656">HPDC 2019 Program Committee  Meeting</font><br> <br>
+Mentor <br> <font color="565656">HackViolet 2022
+<a href="https://www.hackviolet.com/">[Website link]</a></font>
+
+</p>
+
+
  <div id="professional_experience" ><br><br>
   <font color="4697c1"><h2>Professional Experience</h2></font>
 <p> 
-2017/08 - Present &nbsp; Research Assistant, William & Mary <br>
+2022/08 - Present &nbsp; Assistant Professor, George Mason University <br>  
+2017/08 - 2022/06 &nbsp; Research Assistant, William & Mary <br>
 2021/05 - 2021/08 &nbsp; Software Engineering Intern, Facebook Inc <br>
 2019/06 - 2019/10 &nbsp; Reliability Intern, IBM Corporation <br>
 2018/07 - 2018/07 &nbsp; Student, ACACES Summer School <br>
@@ -264,28 +258,6 @@ Sensys 2020, COVID-19 Pandemic Research Poster Session <a href="covid19_simulati
 &nbsp;
 </p>
 </div>
-
-<div id="services" ><br><br>
-  <font color="4697c1"><h2>Service</h2></font>
-<p> 
-	Program Committee
-<br> <font color="565656">
-    IPDPS 2023 </font><br><br>
-Organizing Committee
-<br> <font color="565656">
-    Sigmetrics 2023 (Publicity Chair) </font><br><br>
-Session Chair & Poster Judge
- <br> <font color="565656">
-ACM Capital Region Celebration of Women in Computing (CAPWIC) 2021 and 2022</font> <br> <br>
-  Sub-reviewer
-  <br> <font color="565656">Sigmetrics 2022, DSN 2022, DSN 2021, Sigmetrics 2021, Sigmetrics 2020, Performance 2020, ICPE 2020, Sigmetrics 2019, DSN 2019 </font><br> <br>
-Member 
-<br> <font color="565656">WHPC-Virginia (Women in High Performance Computing in Virginia)<br> SWC-WM (Society of Women in Computing in William & Mary)</font><br> <br>
-Volunteer <br> <font color="565656">HPDC 2019 Program Committee  Meeting</font><br> <br>
-Mentor <br> <font color="565656">HackViolet 2022
-<a href="https://www.hackviolet.com/">[Website link]</a></font>
-
-</p>
 
 
 <div><br><br>
